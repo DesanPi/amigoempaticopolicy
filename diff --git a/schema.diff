@@ -1,0 +1,14 @@
+diff --git a/schema.json b/schema.json
+--- schema.json
++++ schema.json
+@@ -6,9 +6,9 @@
+     "version": "1.0.0"
+   },
+   "servers": [
+     {
+-      "url": "https://example.com/api"
++      "url": "https://raw.githubusercontent.com/DesanPi/amigoempaticopolicy/api/"
+     }
+   ],
+   "paths": {
+     "/conversation": {
