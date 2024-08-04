@@ -10,7 +10,51 @@
       "url": "https://example.com/api"
     }
   ],
-  "paths": {},
+  "paths": {
+    "/conversation": {
+      "post": {
+        "summary": "Iniciar una nueva conversación",
+        "description": "Endpoint para iniciar una nueva conversación con el modelo Amigo Empático.",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "message": {
+                    "type": "string",
+                    "description": "Mensaje inicial para iniciar la conversación"
+                  }
+                },
+                "required": ["message"]
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Respuesta exitosa",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "response": {
+                      "type": "string",
+                      "description": "Respuesta del modelo Amigo Empático"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Solicitud incorrecta"
+          }
+        }
+      }
+    }
+  },
   "components": {
     "schemas": {
       "intended_use": {
@@ -25,7 +69,7 @@
             "items": {
               "type": "string"
             },
-            "description": "Sólo conversación."
+            "description": "Escenarios específicos de uso del modelo."
           }
         }
       },
@@ -53,11 +97,11 @@
         "properties": {
           "data_storage": {
             "type": "string",
-            "description": "No almacenamos datos."
+            "description": "No se almacenan datos."
           },
           "data_protection": {
             "type": "string",
-            "description": "No aplica, es todo 100% a través de ChatGPT."
+            "description": "No usamos información de las conversaciones."
           }
         }
       },
@@ -66,11 +110,11 @@
         "properties": {
           "content_moderation": {
             "type": "string",
-            "description": "Estamos entrenando al modelo para rechazar cualquier actitud o lenguaje agresivo."
+            "description": "Cualquier ofensa o lenguaje agresivo o discriminatorio será rechazado."
           },
           "transparency": {
             "type": "string",
-            "description": "Sólo queremos mejorar la forma en que el GPT se comunica amistosa y positivamente."
+            "description": "No se utiliza información personal de los usuarios."
           }
         }
       }
