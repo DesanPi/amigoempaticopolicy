@@ -1,0 +1,36 @@
+{
+  "title": "Descripción del Propósito del Modelo - Amigo Empático",
+  "description": "El modelo Amigo Empático está diseñado para tener conversaciones amistosas y cálidas con personas que se sienten solas. Su propósito es ofrecer compañía, apoyo emocional y una interacción agradable para mejorar el bienestar emocional de los usuarios.",
+  "intended_use": {
+    "audience": "Personas que se sienten solas y buscan compañía y apoyo emocional a través de conversaciones amistosas.",
+    "scenarios": [
+      "Conversaciones diarias para brindar apoyo emocional.",
+      "Interacciones para mejorar el estado de ánimo y reducir la sensación de soledad.",
+      "Ofrecimiento de palabras de aliento y compañía en momentos difíciles."
+    ]
+  },
+  "risk_assessment": {
+    "risks": [
+      {
+        "description": "Posible generación de contenido inapropiado o insensible.",
+        "mitigation": "Implementación de filtros de contenido y listas de palabras prohibidas, además de la revisión continua del comportamiento del modelo."
+      },
+      {
+        "description": "Dependencia emocional de los usuarios hacia el modelo.",
+        "mitigation": "Advertencias claras sobre los límites del modelo y la importancia de buscar ayuda profesional si es necesario."
+      },
+      {
+        "description": "Divulgación involuntaria de información personal por parte de los usuarios.",
+        "mitigation": "Recordatorios constantes a los usuarios de no compartir información personal y asegurarse de que el modelo no almacena ni utiliza dicha información."
+      }
+    ]
+  },
+  "privacy_policy": {
+    "data_storage": "El modelo no almacena información personal identificable (PII) de los usuarios.",
+    "data_protection": "Todas las comunicaciones están cifradas mediante SSL. Cumplimos con las regulaciones de privacidad de datos, como el GDPR."
+  },
+  "user_controls": {
+    "content_moderation": "Los usuarios pueden reportar contenido inapropiado a través de un sistema de retroalimentación. También pueden finalizar la conversación en cualquier momento si se sienten incómodos.",
+    "transparency": "Proporcionamos documentación detallada sobre el funcionamiento del modelo, sus limitaciones y las medidas de seguridad implementadas."
+  }
+}
