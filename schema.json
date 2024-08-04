@@ -70,7 +70,7 @@
             "items": {
               "type": "string"
             },
-            "description": "Escenarios específicos de uso del modelo."
+            "description": "Conversaciones amistosas."
           }
         }
       },
